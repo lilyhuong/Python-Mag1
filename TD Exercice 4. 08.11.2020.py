@@ -5,7 +5,7 @@ week = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sun
 i = 0  #créer une value départ pour i
 while i < len(week): #quand  indice i < taille de la liste (week), ici taille (week) = 7
     if week[i] == "Friday":  #si value i est "Friday"
-        print ("Cool ! It's Friday" ) #on print "Cool......"
+        print ("Cool ! It's Friday" ) #affiche "Cool......"
     elif i > 4:  #ou si  indice i > 4 (ça peut dire que value i est "Saturday" ou "Sunday")
         print ("Week-end, it's party time!") #afficher
     else: #ou le reste =  le denier cas
