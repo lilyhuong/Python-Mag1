@@ -2,11 +2,11 @@
 
 #exercice 1
 week = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"]
-i = 0  #créer une value départ pour i
-while i < len(week): #quand  indice i < taille de la liste (week), ici taille (week) = 7
+i = 0  #créer une valeur départ pour i
+while i < len(week): #quand  l'indice i < la taille de la liste (week), ici taille (week) = 7
     if week[i] == "Friday":  #si value i est "Friday"
         print ("Cool ! It's Friday" ) #affiche "Cool......"
-    elif i > 4:  #ou si  indice i > 4 (ça peut dire que value i est "Saturday" ou "Sunday")
+    elif i > 4:  #ou si  l'indice i > 4 (ça peut dire que value i est "Saturday" ou "Sunday")
         print ("Week-end, it's party time!") #afficher
     else: #ou le reste =  le denier cas
         print ( "Go to work")
@@ -16,10 +16,10 @@ while i < len(week): #quand  indice i < taille de la liste (week), ici taille (w
 alphabet =  ["A", "B", "B", "C", "A", "B", "A", "C"]
 i = 0 
 Replace = [] # on crée une nouvelle liste vide
-while i < len(alphabet): #quand indice i < talle de la liste alphabet (taille = 8)
+while i < len(alphabet): #quand l'indice i < la talle de la liste alphabet (taille = 8)
     if alphabet[i] == "A": #si value i est A
         Replace.append("X") #la nouvelle liste Replace ajoute un nouveau élément X
-    elif alphabet[i] == "B": #ou si value i est B
+    elif alphabet[i] == "B": #ou si la valeur i est B
         Replace.append("Y") #la liste Replace ajoute "Y"
     else: #denier cas
         Replace.append("Z")
@@ -28,10 +28,10 @@ print ("The new list is: " , Replace)
 
 #Exercice 3
 number = [1, 6, 9, 78, -16]
-i = 0 #on crée une value départ pour i = 0
+i = 0 #on crée une valeur départ pour i = 0
 min = number[i] #on fait une hypothèse que minnimum of list number est le premier élément
-while i < len(number): #quand indice i < taille de la liste number = 5 
-    if number[i] < min: #si value of i < min (value d'hypothese)
+while i < len(number): #quand l'indice i <  la taille de la liste number = 5 
+    if number[i] < min: #si value of i < min (valeur d'hypothese)
         min = number[i] #maintement, le minimum de la liste number est value i
     i += 1
 print ("Minimum of this list is: " , min)
@@ -47,7 +47,7 @@ while i < len(note):
         min = note[i]
     elif note[i] > max: #si value of i > max (value d'hypothese 2)
         max = note[i] #maintement, le maximum de la liste number est value i
-    sum += note[i] #somme = somme + la value i
+    sum += note[i] #somme = somme + value i
     i += 1
 print ("The minimum grade is ", min)
 print ("The maximum grade is ", max)
@@ -80,7 +80,7 @@ Syracuse = []
 number = int(input("Give me a positive integer! "))
 Syracuse = [number] #le premier élément de la liste Syracuse est number
 i = 0 
-while Syracuse[i] != 1: #quand la value i est différent à 1 (autrement dit, la fonction while va s'arrete quand la value i = 1)
+while Syracuse[i] != 1: #quand la valeur i est différent à 1 (autrement dit, la fonction while va s'arrete quand la valeur i = 1)
     if Syracuse[i] % 2 == 0:
         Syracuse.append(int(Syracuse[i]/2))
     if Syracuse[i] % 2 == 1:
@@ -91,7 +91,7 @@ print(Syracuse)
 
 #PART II
 #Exercice 1
-import math #on exporte la biblothèque "math"
+import math #on exporte la bibliothèque "math"
 for x in range(10, 21):
     y = math.sqrt(x) #on utilise la function sqrt(x) = square root of x dans la bibliothèque math
     print (y)
