@@ -123,9 +123,14 @@ for i in range (1, 11):
 
 #Exercice 4
 import random
-n = 20
 print(''.join(["{}".format(random.randint(1,4)) for number in range(0,20)]))
 #random.randint(1, 4)  = Renvoie un nombre aléatoire entre 1 et 4, ici (1, 2, 3, 4)
+#autre solution
+number = 0
+for i in range (20)
+    digit = random.randint(1,4)
+    number = number * 10 + digit #example: 4 = 0 * 10 + 4, next number will be 42 = 4 * 10 + 2, next will be 423 = 42 * 10 + 3
+print (number)
 
 #Exercice 5
 import datetime
