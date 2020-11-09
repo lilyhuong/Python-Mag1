@@ -77,7 +77,14 @@ print(odd)
 
 #Exercice 6
 Syracuse = []
-number = int(input("Give me a positive integer! "))
+while (true):
+    number = input("Give me a positive integer! ")
+    if number.isdigit():
+        number = int(number)
+        break
+     else:
+        print ("please give a positive number !")
+print(number)
 Syracuse = [number] #le premier élément de la liste Syracuse est number
 i = 0 
 while Syracuse[i] != 1: #quand la valeur i est différent à 1 (autrement dit, la fonction while va s'arrete quand la valeur i = 1)
