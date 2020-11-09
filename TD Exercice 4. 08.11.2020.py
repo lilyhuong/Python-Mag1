@@ -77,13 +77,13 @@ print(odd)
 
 #Exercice 6
 Syracuse = []
-while (true):
-    number = input("Give me a positive integer! ")
-    if number.isdigit():
-        number = int(number)
-        break
-     else:
-        print ("please give a positive number !")
+while (true): #on utilise cette méthode pour tester la valeur que le client tappe est bien un entier positif ou pas
+    number = input("Give me a positive integer! ") #demande l'utilisateur tappe un nombre
+    if number.isdigit(): #si la nombre est bien un entier positif
+        number = int(number) 
+        break #stop function
+     else: #si la valeur n'est pas un entier positif
+        print ("please give a positive number !") 
 print(number)
 Syracuse = [number] #le premier élément de la liste Syracuse est number
 i = 0 
@@ -102,8 +102,12 @@ import math #on exporte la bibliothèque "math"
 for x in range(10, 21):
     y = math.sqrt(x) #on utilise la function sqrt(x) = square root of x dans la bibliothèque math
     print (y)
-    x += 1
-
+#autre méthode
+from math import sqrt
+i = 10
+while i < 10:
+    print (sqrt(i))
+    i += 1
 #Exercice 2
 import math
 print(math.cos(math.pi/2)) 
@@ -115,7 +119,6 @@ import time
 for i in range (1, 11):
     print(i)
     time.sleep(1)
-    i += 1
 #time.sleep(x) = vous pouvez utiliser pour suspendre l'exécution du thread appelant pendant le nombre de secondes x que vous spécifiez.
 
 #Exercice 4
